@@ -78,4 +78,4 @@ forcaSenha.classList.add('media');
 if (entropia > 5 && tamanhoSenha < 12 )
     else if (entropia <= 5){
     }
-    else if (tamanhoSenha > 5 
+    else if entropia > 5 

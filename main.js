@@ -61,6 +61,7 @@ function geraSenha() {
         numeroAleatorio = Math.floor(numeroAleatorio);
         senha = senha + alfabeto[numeroAleatorio];
     }
-    campoSenha.value = senha;
+     campoSenha.value = senha;
 }
-let entropia = tamanhoSenha * Math.log2(alfabeto.length);
+ classificaSenha();
+ 

@@ -57,19 +57,25 @@ function geraSenha() {
     console.log(alfabeto);
     let senha = '';
     for (let i = 0; i < tamanhoSenha; i++) {
-        let numeroAleatorio = Math.random() * alfabeto.length;
+        let numeroAleatorio = Math.random() * console.log(entropia);
         numeroAleatorio = Math.floor(numeroAleatorio);
         senha = senha + alfabeto[numeroAleatorio];
     }
      campoSenha.value = senha;
 }
- classificaSenha();
+ classificaSenha(alfabeto.length);
+
+function classificaSenha(tamanhoAlfabeto){
+    let entropia = tamanhoSenha * Math.log2(tamanhoAlfabeto);
+    console.log(entropiconsole.log(entropia);a);
  forcaSenha.classList.remove('fraca','media','forte');
- if (tamanhoSenha > 11){
+ if (entropia > 11){
 forcaSenha.classList.add('forte');
 }
 else {
 forcaSenha.classList.add('media');
 }
-if (tamanhoSenha > 5 && tamanhoSenha < 12 )
-    else if (tamanhoSenha <= 5){
+if (entropia > 5 && tamanhoSenha < 12 )
+    else if (entropia <= 5){
+    }
+    else if (tamanhoSenha > 5 

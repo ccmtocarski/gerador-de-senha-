@@ -63,3 +63,4 @@ function geraSenha() {
     }
     campoSenha.value = senha;
 }
+let entropia = tamanhoSenha * Math.log2(alfabeto.length);
